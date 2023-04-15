@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>MyCoffee</title>
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <p class="logo">MyCoffee</p>
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </header>
+        <div class="textBox">
+            <div class="content">
+                <h2>Coffee is not coffee, <br>if it's not<br><span> MyCoffee</span></h2>
+                <p>Tastes like happiness and freshness combined. What a great way to start your day </p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="imgBox">
+                <img src="images/coff.png" class="Starbucks">
+            </div>
+        </div>
+        <div class="thumb">
+            <ul>
+                <li><img src="images/ser_img1.png" onclick="imgSlider('images/ser_img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="images/ser_img2.png" onclick="imgSlider('images/ser_img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="images/ser_img3.png" onclick="imgSlider('images/ser_img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+           
+        </div>
+        <div class="sci">
+            <ul>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+            </ul>
+        </div>
+        
+
+    </section>
+    <div class="learnMore">
+        <div class="cofeeOne">
+            <img src="images/ser_img1.png">
+            <p>Red Coffee</p>
+        </div>
+        <div class="cofeeTwo">
+            <img src="images/ser_img2.png">
+            <p>Chocolate Coffee</p>
+        </div>
+        <div class="cofeeThree">
+            <img src="images/ser_img3.png">
+            <p>Black coffee</p>
+        </div>
+    </div>
+    <div class="footer">
+       
+        <div class="row">
+            <div class="col">
+                <h5>Menu</h5>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">What's New</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h5>Coffee</h5>
+                <a href="#">Red Coffee</a>
+                <a href="#">Chocolate coffee</a>
+                <a href="#">Black coffee</a>
+                
+
+            </div>
+            <div class="col">
+                <h5>Follow Us</h5>
+                <a href="#"><img src="images/instagram.png"></a>
+                <a href="#"><img src="images/twitter.png"></a>
+                <a href="#"><img src="images/facebook.png"></a>
+               
+            </div>
+            <div class="col">
+                <h5>Contact us</h5>
+                <form>
+                    <input type="Email" placeholder="Email">
+                    <input type="text" placeholder="Leave a message">
+                    <button>Submit</button>
+                </form>
+            </div>
+          
+            
+        </div>
+   
+        
+    </div>
+    <script type="text/javascript">
+        function  imgSlider(anything){
+            document.querySelector('.Starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = documnet.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
